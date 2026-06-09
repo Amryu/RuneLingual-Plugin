@@ -468,6 +468,7 @@ public class WidgetCapture {
             if (ids.getWidgetIdChatButtonName().contains(widgetId) && !text.contains("<br>")) {
                 widget.setText(text+"<br>"); // add <br> to the button name to place this above the filter type
                 widget.setXTextAlignment(WidgetTextAlignment.CENTER);
+                widget.setYTextAlignment(WidgetTextAlignment.TOP); // keep the name at the top, not vertically centered
             } else if (ids.getWidgetIdChatButtonFilterType().contains(widgetId) && !text.contains("<br>")) {
                 widget.setText("<br>"+text); // add <br> to the filter type to place this below the button name
                 widget.setXTextAlignment(WidgetTextAlignment.CENTER);
